@@ -13,7 +13,6 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .binaryTarget(name: XIBLoadable, url: "https://SERVER_URL/XIBLoadable.xcframework.zip", checksum: "7249654163be3b8976912c4beaf24ab24b0d216eddd5fc55f405c7701d5472a2")
-        //7249654163be3b8976912c4beaf24ab24b0d216eddd5fc55f405c7701d5472a2
+        .binaryTarget(name: XIBLoadable, url: "https://github.com/aivars/XIBLoadableRemote/blob/main/XIBLoadable.xcframework.zip", checksum: "7249654163be3b8976912c4beaf24ab24b0d216eddd5fc55f405c7701d5472a2")
     ]
 )
