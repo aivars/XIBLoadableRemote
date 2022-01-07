@@ -1,0 +1,16 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios15.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name XIBLoadable_iOS
+import Swift
+import UIKit
+@_exported import XIBLoadable_iOS
+import _Concurrency
+public protocol XIBLoadable {
+  func load(from xibName: Swift.String) -> Swift.Bool
+  func add(to view: UIKit.UIView)
+}
+extension XIBLoadable_iOS.XIBLoadable where Self : UIKit.UIView {
+  @discardableResult
+  public func load(from xibName: Swift.String) -> Swift.Bool
+  public func add(to view: UIKit.UIView)
+}
